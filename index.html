@@ -4,7 +4,7 @@
   <title>Untitled</title>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
-    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){callbackObj.requestMachineId()})");
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){callbackObj.requestLocation()})");
 });
 
 function add_script(txt) {
@@ -16,6 +16,10 @@ function add_script(txt) {
 
 function processMachineId(machineId){
   alert(machineId);
+}
+  
+function processLocation(location){
+  alert(location);
 }
 </script>
 </head>
