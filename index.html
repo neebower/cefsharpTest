@@ -4,7 +4,7 @@
   <title>Untitled</title>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
-    add_script("var b = document.getElementById('go');b.addEventListener('click' , processMachineId(12345))");
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , processMachineId())");
 });
 
 function test() {
@@ -14,8 +14,8 @@ function test() {
     document.getElementsByTagName('head')[0].appendChild(newScript);
  
 }
-function processMachineId(machineId){
-  alert(machineId);
+function processMachineId(){
+  alert("12345");
 }
   
 </script>
