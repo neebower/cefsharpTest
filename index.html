@@ -4,16 +4,20 @@
   <title>Untitled</title>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
-    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){alert(12345)})");
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){callbackObj.requestMachineId()})");
 });
 
 function test() {
-//     var newScript = document.createElement("script");
-//     newScript.type = "text/javascript";
-//     newScript.text = txt;
-//     document.getElementsByTagName('head')[0].appendChild(newScript);
-  alert(12345);
+    var newScript = document.createElement("script");
+    newScript.type = "text/javascript";
+    newScript.text = txt;
+    document.getElementsByTagName('head')[0].appendChild(newScript);
+ 
 }
+function processMachineId(string machineId){
+  alert(machineId);
+}
+  
 </script>
 </head>
 <body>
