@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Untitled</title>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(){
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){alert(12345)})");
+});
+
+function add_script(txt) {
+    var newScript = document.createElement("script");
+    newScript.type = "text/javascript";
+    newScript.text = txt;
+    document.getElementsByTagName('head')[0].appendChild(newScript);
+}
+</script>
+</head>
+<body>
+ <input id="go" name="" type="button" value="test" >
+</body>
+</html>
