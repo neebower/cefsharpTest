@@ -4,7 +4,8 @@
   <title>Untitled</title>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
-    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){callbackObj.requestLocation()})");
+    var t = '{"MessageType":"request", "Controller":"CardReader", "Options":{"name":"testtesttest", "id":"123"}}';
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , function(){callbackObj.requestLocation("t")})");
 });
 
 function add_script(txt) {
