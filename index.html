@@ -4,12 +4,14 @@
   <title>Untitled</title>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
-    var t = '{"MessageType":"request", "Controller":"CardReader", "Options":{"name":"testtesttest", "id":"123"}}';
-    add_script("var b = document.getElementById('go');b.addEventListener('click' , request()");
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , test()");
 });
 function request(){
   var t = '{"MessageType":"request", "Controller":"CardReader", "Options":{"name":"testtesttest", "id":"123"}}';
   RequestToCef.Request(t);
+}
+function test(){
+  alert("HELLO!");
 }
 
 function add_script(txt) {
