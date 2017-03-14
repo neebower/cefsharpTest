@@ -11,16 +11,11 @@ function doSomething(event) {
 
     // Теперь event - объект события во всех браузерах.
 }
-
 element.onclick = doSomething;
-
-
-  
-
 
 function reques(){
   var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\", \"Options\":{\"name\":\"testtesttest\", \"id\":\"123\"}}";
-  RequestToCef.Request(t);
+  requestToCef.Request(t);
 }
 function test(){
   alert("HELLO!");
@@ -45,6 +40,6 @@ function processLocation(location){
 <body>
   <input type="button" onclick="test()" value="test"/>
   <input type="button" onclick="reques()" value="request"/>
- <input id="go" name="" type="button" value="1" >
+ <input id="go" name="" type="button" value="2" >
 </body>
 </html>
