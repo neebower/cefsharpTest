@@ -3,9 +3,7 @@
 <head>
   <title>Untitled</title>
 <script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function(){
-    add_script("var b = document.getElementById('go');b.addEventListener('click' , test()");
-});
+
 function request(){
   var t = '{"MessageType":"request", "Controller":"CardReader", "Options":{"name":"testtesttest", "id":"123"}}';
   RequestToCef.Request(t);
@@ -13,6 +11,9 @@ function request(){
 function test(){
   alert("HELLO!");
 }
+  document.addEventListener("DOMContentLoaded", function(){
+    add_script("var b = document.getElementById('go');b.addEventListener('click' , test()");
+});
 
 function add_script(txt) {
     var newScript = document.createElement("script");
