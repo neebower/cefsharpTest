@@ -18,8 +18,8 @@ element.onclick = doSomething
   
 
 
-function request(){
-  var t = '{"MessageType":"request", "Controller":"CardReader", "Options":{"name":"testtesttest", "id":"123"}}';
+function requestToCef(){
+  string t = '{"MessageType":"request", "Controller":"CardReader", "Options":{"name":"testtesttest", "id":"123"}}';
   RequestToCef.Request(t);
 }
 function test(){
@@ -43,7 +43,7 @@ function processLocation(location){
 </script>
 </head>
 <body>
-  <input type="button" onclick="request()" value="Нажми меня2"/>
+  <input type="button" onclick="requestToCef()" value="Нажми меня3"/>
  <input id="go" name="" type="button" value="test" >
 </body>
 </html>
