@@ -25,7 +25,7 @@ function test(){
 
 function responseFromCef(json){
    var result = JSON.parse(json);
-  alert(result.MessageType + " " + result.Controller + " " + result.Options[0] + " " + result.Options[1]);
+  alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
 }
   
 function add_script(txt) {
