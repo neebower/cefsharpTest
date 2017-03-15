@@ -13,13 +13,15 @@ function doSomething(event) {
 }
 element.onclick = doSomething;
 
-function reques(){
-  var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\", \"Options\":{\"name\":\"testtesttest\", \"id\":\"123\"}}";
+function options(){
+  var t = "{\"MessageType\":\"request\", \"Controller\":\"OtherOptions\", \"Options\":{\"method\":\"Location\"}}";
   
   requestToCef.request(t);
   
+function printer(){
+  var t = "{\"MessageType\":\"request\", \"Controller\":\"DocPrinter\", \"Options\":{\"asd\":\"\"}}";
 }
-function test(){
+function card(){
   var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\", \"Options\":{\"method\":\"cardRequest\"}}";
   requestToCef.request(t)
 }
@@ -47,8 +49,9 @@ function processLocation(location){
 </script>
 </head>
 <body>
-  <input type="button" onclick="test()" value="test"/>
-  <input type="button" onclick="reques()" value="request"/>
+  <input type="button" onclick="card()" value="card"/>
+  <input type="button" onclick="printer()" value="prtin"/>
+  <input type="button" onclick="options()" value="options"/>
  <input id="go" name="" type="button" value="7" >
 </body>
 </html>
