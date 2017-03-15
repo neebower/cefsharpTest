@@ -24,7 +24,8 @@ function test(){
 }
 
 function responseFromCef(json){
-   alert(json);
+   var result = JSON.parse(json);
+  alert(result.MessageType + " " + result.Controller + " " + result.Options[0] + " " + result.Options[1]);
 }
   
 function add_script(txt) {
@@ -46,6 +47,6 @@ function processLocation(location){
 <body>
   <input type="button" onclick="test()" value="test"/>
   <input type="button" onclick="reques()" value="request"/>
- <input id="go" name="" type="button" value="6" >
+ <input id="go" name="" type="button" value="7" >
 </body>
 </html>
