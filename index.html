@@ -20,6 +20,7 @@ function options(){
 }
 function printer(){
   var t = "{\"MessageType\":\"request\", \"Controller\":\"DocPrinter\", \"Options\":{\"asd\":\"asd\"}}";
+  requestToCef.request(t);
 }
 function card(){
   var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\", \"Options\":{\"method\":\"cardRequest\"}}";
