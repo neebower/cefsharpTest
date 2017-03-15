@@ -20,12 +20,14 @@ function reques(){
   
 }
 function test(){
-  alert("HELLO!");
+  var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\", \"Options\":{\"method\":\"cardRequest\"}}";
+  requestToCef.request(t)
 }
 
 function responseFromCef(json){
    var result = JSON.parse(json);
-  alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
+  //alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
+  alert(result.Options["method"] + " " + result.Options["status"] + " " + result.Options["message"] + " " + result.Options["result"]);
 }
   
 function add_script(txt) {
