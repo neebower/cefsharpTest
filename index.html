@@ -27,7 +27,7 @@ function card(){
   requestToCef.request(t);
 }
 function testprint(){
-   var t = "{\"MeassageType\":\"request\", \"Controller\":\"DocPrinter\", \"Options\":{\"method\":\"print\",\"LastName\":\"Shakirov\",\"FirstName\":\"Рамис\"}}";
+   var t = "{\"MeassageType\":\"request\", \"Controller\":\"DocPrinter\", \"Options\":{\"method\":\"print\",\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\",\"FirstName\":\"Рамис\"}}";
   requestToCef.request(t);
 }
 
@@ -54,7 +54,7 @@ function processLocation(location){
 </script>
 </head>
 <body>
-  <input type="button" onclick="testprint()" value="testprint"/>
+  <input type="button" onclick="testprint()" value="testprint1"/>
   <input type="button" onclick="card()" value="card"/>
   <input type="button" onclick="printer()" value="prtin"/>
   <input type="button" onclick="options()" value="options"/>
