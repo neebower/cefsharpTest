@@ -14,27 +14,27 @@ function doSomething(event) {
 element.onclick = doSomething;
 
 function options(){
-  var t = "{\"MessageType\":\"request\", \"Controller\":\"OtherOptions\", \"Options\":{\"method\":\"Location\"}}";
+  var t = "{\"MessageType\":\"request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
   
   requestToCef.request(t);
 }
 function printer(){
-  var t = "{\"MessageType\":\"request\", \"Controller\":\"DocPrinter\", \"Options\":{\"asd\":\"asd\"}}";
+  var t = "{\"MessageType\":\"request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
   requestToCef.request(t);
 }
 function card(){
-  var t = "{\"MeassageType\":\"request\", \"Controller\":\"CardReader\", \"Options\":{\"method\":\"cardRequest\"}}";
+  var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
   requestToCef.request(t);
 }
 function testprint(){
-   var t = "{\"MeassageType\":\"request\", \"Controller\":\"DocPrinter\", \"Options\":{\"method\":\"print\",\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\",\"FirstName\":\"Рамис\"}}";
+   var t = "{\"MessageType\":\"request\", \"Controller\":\"DocPrinter\",\"Method\":\"print\", \"Options\":{\"PathToDocument\":\"print.docx\", \"Parametres\:{"\"LastName\":\"Shakirov\",\"FirstName\":\"Рамис\"}}}";
   requestToCef.request(t);
 }
 
 function responseFromCef(json){
    var result = JSON.parse(json);
   //alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
-  alert(result.Options["method"] + " " + result.Options["status"] + " " + result.Options["message"] + " " + result.Options["result"]);
+  alert(result.Method + " " + result.Options["status"] + " " + result.Options["message"] + " " + result.Options["result"] + " " + result.Options["error"]);
 }
   
 function add_script(txt) {
@@ -58,6 +58,6 @@ function processLocation(location){
   <input type="button" onclick="card()" value="card"/>
   <input type="button" onclick="printer()" value="prtin"/>
   <input type="button" onclick="options()" value="options"/>
- <input id="go" name="" type="button" value="7" >
+ <input id="go" name="" type="button" value="8" >
 </body>
 </html>
