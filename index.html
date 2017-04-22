@@ -58,6 +58,53 @@ function card4(){
   requestToCef.request(t);
 }
   
+function prt1(){
+  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDo\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function prt2(){
+  var t = "{\"Id\":\"2\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PatToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function prt3(){
+ var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"prnt.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function prt4(){
+ var t = "{\"Id\":\"4\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LatName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function prt5(){
+ var t = "{\"Id\":\"5\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirtName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function prt6(){
+ var t = "{\"Id\":\"6\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirtName\":\"Рамис\", \"ValiUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function prt7(){
+ var t = "{\"Id\":\"7\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirtName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
+  requestToCef.request(t);
+}
+  
+function empty(){
+ var t = "{}";
+  requestToCef.request(t);
+}
+
+function twocontr(){
+   var t = "{\"Id\":\"25\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Controller\":\"CardReader\",\"Method\":\"CancelCardRequest\"}";
+
+  requestToCef.request(t);
+}
+  
+  
 
 
   
@@ -93,6 +140,13 @@ function processLocation(location){
   <input type="button" onclick="card2()" value="c2"/>
   <input type="button" onclick="card3()" value="c3"/>
   <input type="button" onclick="card4()" value="c4"/>
+  <input type="button" onclick="prt1()" value="p1"/>
+  <input type="button" onclick="prt2()" value="p2"/>
+  <input type="button" onclick="prt3()" value="p3"/>
+  <input type="button" onclick="prt4()" value="p4"/>
+  <input type="button" onclick="prt5()" value="p5"/>
+  <input type="button" onclick="prt6()" value="p6"/>
+  <input type="button" onclick="prt7()" value="p7"/>
   
   
  
