@@ -34,7 +34,12 @@ function opt4(){
 }
   
 function card1(){
-  var t = "{\"Id\":\"1\",\"MessageType\":\"Response\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
+  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
+  requestToCef.request(t);
+}
+  
+function card1stop(){
+  var t = "{\"Id\":\"6\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CancelCardRequest\"}";
   requestToCef.request(t);
 }
   
