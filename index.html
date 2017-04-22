@@ -17,6 +17,42 @@ function opt1(){
   var t = "{\"Id\":\"1\",\"MessageType\":\"Response\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
   requestToCef.request(t);
   
+}
+  function opt2(){
+  var t = "{\"Id\":\"2\",\"MessageType\":\"Request1\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
+  requestToCef.request(t);
+}
+
+function opt3(){
+  var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"OtherOption\",\"Method\":\"GetLocation\"}";
+  requestToCef.request(t);
+}
+  
+function opt4(){
+  var t = "{\"MessageType\":\"Request\",\"Id\":\"4\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
+  requestToCef.request(t);
+}
+  
+function card1(){
+  var t = "{\"Id\":\"1\",\"MessageType\":\"Response\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
+  requestToCef.request(t);
+}
+  
+function card2(){
+  var t = "{\"Id\":\"2\",\"MessageType\":\"Resuest\", \"Controller\":\"CardReader\",\"Method\":\"CardReques\"}";
+  requestToCef.request(t);
+}
+  
+function card3(){
+  var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"CardReade\",\"Method\":\"CardRequest\"}";
+  requestToCef.request(t);
+}
+  
+function card4(){
+  var t = "{\"Id\":\"4\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CancelCardRequest\"}";
+  requestToCef.request(t);
+}
+  
 
 
   
@@ -44,7 +80,13 @@ function processLocation(location){
 </head>
 <body>
   <input type="button" onclick="opt1()" value="o1"/>
-  
+  <input type="button" onclick="opt2()" value="o2"/>
+  <input type="button" onclick="opt3()" value="o3"/>
+  <input type="button" onclick="opt4()" value="o4"/>
+  <input type="button" onclick="card1()" value="c1"/>
+  <input type="button" onclick="card2()" value="c2"/>
+  <input type="button" onclick="card3()" value="c3"/>
+  <input type="button" onclick="card4()" value="c4"/>
   
   
  
