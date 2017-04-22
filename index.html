@@ -34,7 +34,7 @@ function testprint(){
 function responseFromCef(json){
    var result = JSON.parse(json);
   //alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
-  alert(result.Method + " " + result.Options["Status"] + " " + result.Options["Message"] + " " + result.Options["Result"] + " " + result.Options["error"]);
+  alert(result.MessageType + " " + result.Controller + " " + result.Method + " " + result.Options["Status"] + " " + result.Options["Message"] + " " + result.Options["Result"] + " " + result.Options["Error"]);
 }
   
 function add_script(txt) {
