@@ -27,7 +27,7 @@ function card(){
   requestToCef.request(t);
 }
 function testprint(){
-   var t = "{\"MessageType\":\"request\", \"Controller\":\"DocPrinter\",\"Method\":\"print\", \"Options\":{\"PathToDocument\":\"print.docx\", \"Parametres\:{"\"LastName\":\"Shakirov\",\"FirstName\":\"Рамис\"}}}";
+   var t = "{\"Id\":\"1\", \"MessageType\":\"request\", \"Controller\":\"DocPrinter\",\"Method\":\"print\", \"Options\":{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"Param1\":\"One\",\"Param2\":\"Two\",\"Param3\":\"Three\"}}";
   requestToCef.request(t);
 }
 
