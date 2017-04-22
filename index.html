@@ -14,16 +14,16 @@ function doSomething(event) {
 element.onclick = doSomething;
 
 function options(){
-  var t = "{\"MessageType\":\"request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
+  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
   
   requestToCef.request(t);
 }
 function printer(){
-  var t = "{\"MessageType\":\"request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
+  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
   requestToCef.request(t);
 }
 function card(){
-  var t = "{\"MessageType\":\"request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
+  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
   requestToCef.request(t);
 }
 function testprint(){
