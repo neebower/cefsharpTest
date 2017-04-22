@@ -19,15 +19,15 @@ function options(){
   requestToCef.request(t);
 }
 function printer(){
-  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
+  var t = "{\"Id\":\"2\",\"MessageType\":\"Request\", \"Controller\":\"OtherOptions\",\"Method\":\"Location\", \"Options\":{\"Method\":\"Location\"}}";
   requestToCef.request(t);
 }
 function card(){
-  var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
+  var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
   requestToCef.request(t);
 }
 function testprint(){
-   var t = "{\"Id\":\"1\", \"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"Print\", \"Options\":{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\",\"Param3\":\"Three\"}}";
+   var t = "{\"Id\":\"4\", \"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"Print\", \"Options\":{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\",\"Param3\":\"Three\"}}";
   requestToCef.request(t);
 }
 
