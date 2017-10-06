@@ -19,18 +19,22 @@ function opt1(){
   
 }
   function opt2(){
-  var t = "{\"Id\":\"2\",\"MessageType\":\"Request1\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
-  requestToCef.sendToApp(t);
+  var t = "{\"MessageType\":\"Request\",\"Id\":\"4\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
+    
+  //var t = "{\"Id\":\"2\",\"MessageType\":\"Request1\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
+  requestToCef.sendtoapp(t);
 }
 
 function opt3(){
-  var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"OtherOption\",\"Method\":\"GetLocation\"}";
+    var t = "{\"MessageType\":\"Request\",\"Id\":\"4\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
+
+//var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"OtherOption\",\"Method\":\"GetLocation\"}";
   requestToCef.sendToApp(t);
 }
   
 function opt4(){
   var t = "{\"MessageType\":\"Request\",\"Id\":\"4\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
-  requestToCef.sendToApp(t);
+  requestToCef.SendToApp(t);
 }
   
 function card1(){
