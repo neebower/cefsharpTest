@@ -15,93 +15,93 @@ element.onclick = doSomething;
 
 function opt1(){
   var t = "{\"Id\":\"1\",\"MessageType\":\"Response\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
   
 }
   function opt2(){
   var t = "{\"Id\":\"2\",\"MessageType\":\"Request1\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
 
 function opt3(){
   var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"OtherOption\",\"Method\":\"GetLocation\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function opt4(){
   var t = "{\"MessageType\":\"Request\",\"Id\":\"4\", \"Controller\":\"OtherOptions\",\"Method\":\"GetLocation\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function card1(){
   var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CardRequest\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function card1stop(){
   var t = "{\"Id\":\"6\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CancelCardRequest\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function card2(){
   var t = "{\"Id\":\"2\",\"MessageType\":\"Resuest\", \"Controller\":\"CardReader\",\"Method\":\"CardReques\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function card3(){
   var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"CardReade\",\"Method\":\"CardRequest\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function card4(){
   var t = "{\"Id\":\"4\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Method\":\"CancelCardRequest\"}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt1(){
   var t = "{\"Id\":\"1\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDo\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt2(){
   var t = "{\"Id\":\"2\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PatToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt3(){
  var t = "{\"Id\":\"3\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"prnt.docx\",\"LastName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt4(){
  var t = "{\"Id\":\"4\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LatName\":\"Shakirov\", \"FirstName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt5(){
  var t = "{\"Id\":\"5\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirtName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt6(){
  var t = "{\"Id\":\"6\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirtName\":\"Рамис\", \"ValiUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function prt7(){
  var t = "{\"Id\":\"7\",\"MessageType\":\"Request\", \"Controller\":\"DocPrinter\",\"Method\":\"PrintSelectedDoc\", Options:{\"PathToDocument\":\"print.docx\",\"LastName\":\"Shakirov\", \"FirtName\":\"Рамис\", \"ValidUntil\":\"One\"}}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
 function empty(){
  var t = "{}";
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
 
 function twocontr(){
    var t = "{\"Id\":\"25\",\"MessageType\":\"Request\", \"Controller\":\"CardReader\",\"Controller\":\"CardReader\",\"Method\":\"CancelCardRequest\"}";
 
-  requestToCef.request(t);
+  requestToCef.sendToApp(t);
 }
   
   
