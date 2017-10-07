@@ -116,9 +116,9 @@ function responseFromCef(json){
    var result = JSON.parse(json);
   //alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
   alert("MessageType :" + result.MessageType + "\n"
-        + "Controller :" +  result.Controller + "\n"
-        + "Method :" + result.Method + "\n"
-        + "Status :" +  result.Options["Status"] + "\n"
+        + "Controller :" +  result.Controller + "\n" 
+        + "Method :" + result.Method + "\n" 
+        + "Status :" +  result.Options["Status"] + "\n");
        
   alert("Message :" + result.Options["Message"] + "\n"
         + "Result :" +  result.Options["Result"] + "\n"
