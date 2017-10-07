@@ -115,7 +115,13 @@ function twocontr(){
 function responseFromCef(json){
    var result = JSON.parse(json);
   //alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
-  alert(result.MessageType + "\n" + result.Controller + "/n" + result.Method + "\\n" + result.Options["Status"] + " \n" + result.Options["Message"] + " \n" + result.Options["Result"] + " \n" + result.Options["Error"]);
+  alert("MessageType :" + result.MessageType + "\n"
+        + "Controller :" +  result.Controller + "\n"
+        + "Method :" + result.Method + "\n"
+        + "Status :" +  result.Options["Status"] + "\n"
+        + "Message :" + result.Options["Message"] + "\n"
+        + "Result :" +  result.Options["Result"] + "\n"
+        + "Error :" + result.Options["Error"]);
 }
   
 function add_script(txt) {
