@@ -114,15 +114,21 @@ function twocontr(){
   
 function responseFromCef(json){
    var result = JSON.parse(json);
+  if(result.Options["Status"] == "Ok")
+  {
   //alert(result.MessageType + " " + result.Controller + " " + result.Options[name] + " " + result.Options["id"]);
   alert("MessageType :" + result.MessageType + "\n"
         + "Controller :" +  result.Controller + "\n" 
         + "Method :" + result.Method + "\n" 
         + "Status :" +  result.Options["Status"] + "\n");
-       
-  alert("Message :" + result.Options["Message"] + "\n"
-        + "Result :" +  result.Options["Result"] + "\n"
-        + "Error :" + result.Options["Error"]);
+  }    
+  else{
+  alert("Controller :" +  result.Controller + "\n" 
+        + "Method :" + result.Method + "\n" 
+        + "Message :" + result.Options["Message"] + "\n"
+        + "Status :" +  result.Options["Status"] + "\n");
+        
+  }
 }
   
 function add_script(txt) {
